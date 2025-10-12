@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-rest-api
+  template:
+    metadata:
+      labels:
+        app: node-rest-api
+    spec:
+      containers:
+        - name: node-rest-api
+          image: jeiyashivani/my-node-app:latest
+          ports:
+            - containerPort: 3000
+
