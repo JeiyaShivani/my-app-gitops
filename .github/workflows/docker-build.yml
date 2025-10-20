@@ -43,5 +43,8 @@ jobs:
           git config user.email "github-actions@github.com"
           git add Deployment.yaml
           git commit -m "Update deployment image to ${{ env.IMAGE_TAG }}" || echo "No changes to commit"
-          git push origin main
+          git push https://JeiyaShivani:${{ secrets.PAT_TOKEN }}@github.com/JeiyaShivani/my-app-gitops.git main
+
+
+
 
