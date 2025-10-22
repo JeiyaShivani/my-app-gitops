@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: node-rest-api
-          image: jeiyashivani/my-gitops-app:20251022151206
+          image: jeiyashivani/my-gitops-app:20251022151248
           ports:
             - containerPort: 5000
           imagePullPolicy: Always
